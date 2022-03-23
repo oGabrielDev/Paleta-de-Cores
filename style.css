@@ -1,23 +1,28 @@
 header {
   text-align: center;
+  border: 2px solid black;
+  background-image: linear-gradient(
+    to right,
+    rgb(190, 2, 2),
+    rgba(27, 27, 13, 0.897)
+  );
+  color: white;
 }
 
-#color-palette {
-  display: flex;
-  max-width: auto;
+#color-palette{
+  text-align: center;
+  margin-top: 20px;
 }
 
-#color-palette > div {
-  background-color: white;
+.color {
   width: 40px;
   height: 40px;
-  margin: 10px;
-  text-align: center;
-  line-height: 75px;
-  border: 1px solid black;
+  display: inline-block;
+  border: 2px solid black;
+  margin-left: 3px;
 }
 
-div #black {
+/* div #black {
   background-color: black;
 }
 
@@ -31,7 +36,7 @@ div #red {
 
 div #green {
   background-color: green;
-}
+} */
 
 #opcoes {
   text-align: center;
@@ -62,8 +67,10 @@ div #green {
 }
 
 #pixel-board {
-  margin-top: 40px;
-  display: inline-block;
+  text-align: center;
+  margin-top: 5%;
+  height: auto;
+  width: auto;
 }
 
 .pixel {
@@ -73,8 +80,5 @@ div #green {
   background-color: white;
   margin-top: 2px;
   margin-left: 2px;
-}
-
-.linha {
-  display: flex;
+  display: inline-block;
 }
